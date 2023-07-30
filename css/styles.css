@@ -117,6 +117,11 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.linkpage:hover,
+.linkpage:focus {
+  color: var(--ocean, #404bbf);
+}
+
 .linkpage::after {
   content: "";
   position: absolute;
@@ -128,12 +133,6 @@ body {
   border-radius: 2px;
 
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.linkpage:hover,
-.linkpage:focus {
-  color: var(--ocean, #404bbf);
-  position: relative;
 }
 
 .linkpage:hover::after,
@@ -226,8 +225,7 @@ body {
   align-items: flex-start;
   gap: 10px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-button:hover,
@@ -379,8 +377,7 @@ body {
   border: 1px solid var(--lightslate, #8e8f99);
   color: var(--light-slate, #8e8f99);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-link:hover,
@@ -422,10 +419,7 @@ body {
   padding: 12px 24px;
   border: 1px solid var(--cornflower, #e7e9fc);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active-filter,
@@ -621,8 +615,7 @@ body {
   border-radius: 15px;
   cursor: pointer;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button {
